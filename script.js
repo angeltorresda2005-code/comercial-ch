@@ -289,7 +289,7 @@ function orderProduct(productName) {
   const message = encodeURIComponent(
     `Hola Comercial CH 👋\n\nMe interesa pedir: *${productName}*\n\n¿Cuál es el precio y disponibilidad?`
   );
-  window.open(`https://wa.me/51999999999?text=${message}`, '_blank');
+  window.open(`https://wa.me/51936999239?text=${message}`, '_blank');
 }
 
 // ---- Smooth scroll for anchor links ----
