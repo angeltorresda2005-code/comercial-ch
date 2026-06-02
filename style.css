@@ -1173,3 +1173,128 @@ ul {
     grid-template-columns: 1fr;
   }
 }
+
+/* ============================================
+   SEARCH BAR
+   ============================================ */
+.product-search {
+  max-width: 500px;
+  margin: 0 auto 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 16px 24px;
+  border: 2px solid var(--color-sand);
+  border-radius: var(--radius-full);
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  color: var(--text-primary);
+  background: var(--bg-card);
+  transition: all var(--transition-base);
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px var(--color-primary-glow);
+}
+
+.search-input::placeholder {
+  color: var(--text-muted);
+}
+
+/* ============================================
+   PRODUCT COUNT
+   ============================================ */
+.product-count {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+/* ============================================
+   PRODUCT PRICE LABEL (no prices in catalog)
+   ============================================ */
+.product-price-label {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  font-style: italic;
+}
+
+/* ============================================
+   NO RESULTS
+   ============================================ */
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-muted);
+}
+
+.no-results-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.no-results h3 {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.no-results p {
+  font-size: 0.95rem;
+}
+
+/* ============================================
+   COMPACT PRODUCT CARDS (for large catalog)
+   ============================================ */
+.product-card .product-image {
+  height: 160px;
+}
+
+.product-card .product-info {
+  padding: 16px;
+}
+
+.product-card .product-name {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.product-card .product-desc {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .search-input {
+    padding: 14px 20px;
+    font-size: 0.95rem;
+  }
+  
+  .category-tabs {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  
+  .category-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .category-tab {
+    flex-shrink: 0;
+  }
+
+  .product-card .product-image {
+    height: 140px;
+  }
+}
