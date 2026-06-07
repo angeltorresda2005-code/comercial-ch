@@ -109,6 +109,14 @@ const PRODUCTS = [
   { name: "Canela Molida", category: "cafe", img: "images/especias.png" },
   { name: "Clavo de Olor", category: "cafe", img: "images/especias.png" },
 
+  // === FRUTOS SECOS ===
+  { name: "Pecana", category: "frutos", img: "images/frutos_secos.png", badge: "⭐ Premium" },
+  { name: "Nueces", category: "frutos", img: "images/frutos_secos.png", badge: "Premium" },
+  { name: "Pasas Bebé", category: "frutos", img: "images/frutos_secos.png", badge: "Popular" },
+  { name: "Pasas Exportadas Grandes", category: "frutos", img: "images/frutos_secos.png", badge: "Exportación" },
+  { name: "Pistacho", category: "frutos", img: "images/frutos_secos.png", badge: "⭐ Premium" },
+  { name: "Pasas Rubias", category: "frutos", img: "images/frutos_secos.png" },
+
   // === OTROS ===
   { name: "Suplemento Infantil", category: "otros", img: "images/harinas.png", badge: "Especial" },
   { name: "Carapulcra", category: "otros", img: "images/harinas.png" },
@@ -124,6 +132,7 @@ const CATEGORY_LABELS = {
   granos: "🌽 Granos y Maíces",
   hojuelas: "🥣 Hojuelas y Pop",
   cafe: "☕ Café y Especias",
+  frutos: "🥜 Frutos Secos",
   otros: "🧺 Otros",
 };
 
